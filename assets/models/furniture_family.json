@@ -1,0 +1,238 @@
+{
+  "family": "fictional modular office furniture",
+  "conventions": {
+    "units": "meters",
+    "up": "+Y",
+    "front": "+Z",
+    "material": "single shared MAT_Furniture, colors baked as vertex colors (COLOR_0, linear)",
+    "grid": "nominal footprints in 0.1 m steps; shelves/cabinets 0.8 or 1.2 m wide",
+    "note": "Asset metadata only. Gameplay values live in the game's own data."
+  },
+  "assets": [
+    {
+      "id": "Office_Desk",
+      "type": "desk",
+      "file": "Office_Desk.glb",
+      "pivot": "floor-contact center; front (+Z) = seated-user side",
+      "size_m": {
+        "x": 1.4,
+        "y": 0.74,
+        "z": 0.7
+      },
+      "bounds_min": [
+        -0.7,
+        0.0,
+        -0.35
+      ],
+      "bounds_max": [
+        0.7,
+        0.74,
+        0.35
+      ],
+      "triangles": 80,
+      "vertices": 144,
+      "surfaces": 1,
+      "material": "MAT_Furniture"
+    },
+    {
+      "id": "Tech_Workstation",
+      "type": "desk",
+      "file": "Tech_Workstation.glb",
+      "pivot": "floor-contact center; front (+Z) = seated-user side",
+      "size_m": {
+        "x": 1.8,
+        "y": 1.12,
+        "z": 0.8
+      },
+      "bounds_min": [
+        -0.9,
+        0.0,
+        -0.4
+      ],
+      "bounds_max": [
+        0.9,
+        1.12,
+        0.4
+      ],
+      "triangles": 172,
+      "vertices": 328,
+      "surfaces": 1,
+      "material": "MAT_Furniture"
+    },
+    {
+      "id": "Office_Chair",
+      "type": "chair",
+      "file": "Office_Chair.glb",
+      "pivot": "floor-contact center (column axis); front (+Z) = direction the sitter faces",
+      "size_m": {
+        "x": 0.629,
+        "y": 1.01,
+        "z": 0.598
+      },
+      "bounds_min": [
+        -0.315,
+        0.0,
+        -0.273
+      ],
+      "bounds_max": [
+        0.315,
+        1.01,
+        0.325
+      ],
+      "triangles": 276,
+      "vertices": 536,
+      "surfaces": 1,
+      "material": "MAT_Furniture"
+    },
+    {
+      "id": "Storage_Cabinet",
+      "type": "cabinet",
+      "file": "Storage_Cabinet.glb",
+      "pivot": "floor-contact center of carcass; doors face +Z",
+      "size_m": {
+        "x": 0.8,
+        "y": 1.8,
+        "z": 0.438
+      },
+      "bounds_min": [
+        -0.4,
+        0.0,
+        -0.2
+      ],
+      "bounds_max": [
+        0.4,
+        1.8,
+        0.238
+      ],
+      "triangles": 62,
+      "vertices": 124,
+      "surfaces": 1,
+      "material": "MAT_Furniture"
+    },
+    {
+      "id": "Equipment_Cabinet",
+      "type": "cabinet",
+      "file": "Equipment_Cabinet.glb",
+      "pivot": "floor-contact center of carcass; doors face +Z",
+      "size_m": {
+        "x": 0.8,
+        "y": 1.8,
+        "z": 0.638
+      },
+      "bounds_min": [
+        -0.4,
+        0.0,
+        -0.3
+      ],
+      "bounds_max": [
+        0.4,
+        1.8,
+        0.338
+      ],
+      "triangles": 172,
+      "vertices": 344,
+      "surfaces": 1,
+      "material": "MAT_Furniture"
+    },
+    {
+      "id": "Wall_Shelf",
+      "type": "wall_shelf",
+      "file": "Wall_Shelf.glb",
+      "pivot": "bottom-center on the wall plane; open side faces +Z",
+      "size_m": {
+        "x": 1.2,
+        "y": 0.6,
+        "z": 0.28
+      },
+      "bounds_min": [
+        -0.6,
+        0.0,
+        0.0
+      ],
+      "bounds_max": [
+        0.6,
+        0.6,
+        0.28
+      ],
+      "triangles": 70,
+      "vertices": 124,
+      "surfaces": 1,
+      "material": "MAT_Furniture"
+    },
+    {
+      "id": "Floor_Shelf",
+      "type": "shelf",
+      "file": "Floor_Shelf.glb",
+      "pivot": "floor-contact center; open side faces +Z",
+      "size_m": {
+        "x": 1.2,
+        "y": 1.8,
+        "z": 0.4
+      },
+      "bounds_min": [
+        -0.6,
+        0.0,
+        -0.2
+      ],
+      "bounds_max": [
+        0.6,
+        1.8,
+        0.2
+      ],
+      "triangles": 112,
+      "vertices": 224,
+      "surfaces": 1,
+      "material": "MAT_Furniture"
+    },
+    {
+      "id": "Small_Table",
+      "type": "table",
+      "file": "Small_Table.glb",
+      "pivot": "floor-contact center",
+      "size_m": {
+        "x": 0.8,
+        "y": 0.72,
+        "z": 0.6
+      },
+      "bounds_min": [
+        -0.4,
+        0.0,
+        -0.3
+      ],
+      "bounds_max": [
+        0.4,
+        0.72,
+        0.3
+      ],
+      "triangles": 100,
+      "vertices": 176,
+      "surfaces": 1,
+      "material": "MAT_Furniture"
+    },
+    {
+      "id": "Reception_Desk",
+      "type": "desk",
+      "file": "Reception_Desk.glb",
+      "pivot": "floor-contact center; visitor side = +Z",
+      "size_m": {
+        "x": 1.8,
+        "y": 1.1,
+        "z": 0.83
+      },
+      "bounds_min": [
+        -0.9,
+        0.0,
+        -0.4
+      ],
+      "bounds_max": [
+        0.9,
+        1.1,
+        0.43
+      ],
+      "triangles": 142,
+      "vertices": 244,
+      "surfaces": 1,
+      "material": "MAT_Furniture"
+    }
+  ]
+}

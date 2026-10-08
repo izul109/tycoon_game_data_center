@@ -1,0 +1,124 @@
+{
+  "family": "fictional wireless AP family",
+  "conventions": {
+    "units": "meters",
+    "up": "+Y",
+    "front": "+Z",
+    "pivot": "origin = mounting reference point on the mounting surface",
+    "marker_axes": "Mount_* and Network_Port local +Z points away from the surface / out of the port",
+    "note": "Asset metadata only. Gameplay/simulation values live in the game's own data, not in the model."
+  },
+  "assets": [
+    {
+      "id": "AP_Ceiling",
+      "type": "ceiling",
+      "file": "AP_Ceiling.glb",
+      "mount_node": "Mount_Ceiling",
+      "port_node": "Network_Port",
+      "led_node": "Status_LED",
+      "body_node": "Body",
+      "size_m": {
+        "x": 0.23,
+        "y": 0.0385,
+        "z": 0.23
+      },
+      "bounds_min": [
+        -0.115,
+        -0.0385,
+        -0.115
+      ],
+      "bounds_max": [
+        0.115,
+        0.0,
+        0.115
+      ],
+      "triangles": 312,
+      "mesh_nodes": 2,
+      "materials": [
+        "MAT_AP_Body",
+        "MAT_AP_Dark",
+        "MAT_AP_Plate",
+        "MAT_AP_StatusLED"
+      ],
+      "network_port_local_pos": [
+        0.077,
+        -0.038,
+        0.0
+      ]
+    },
+    {
+      "id": "AP_Wall",
+      "type": "wall",
+      "file": "AP_Wall.glb",
+      "mount_node": "Mount_Wall",
+      "port_node": "Network_Port",
+      "led_node": "Status_LED",
+      "body_node": "Body",
+      "size_m": {
+        "x": 0.13,
+        "y": 0.21,
+        "z": 0.0365
+      },
+      "bounds_min": [
+        -0.065,
+        -0.105,
+        0.0
+      ],
+      "bounds_max": [
+        0.065,
+        0.105,
+        0.0365
+      ],
+      "triangles": 106,
+      "mesh_nodes": 2,
+      "materials": [
+        "MAT_AP_Body",
+        "MAT_AP_Dark",
+        "MAT_AP_Plate",
+        "MAT_AP_StatusLED"
+      ],
+      "network_port_local_pos": [
+        0.0,
+        -0.104,
+        0.017
+      ]
+    },
+    {
+      "id": "AP_Industrial",
+      "type": "industrial",
+      "file": "AP_Industrial.glb",
+      "mount_node": "Mount_Bracket",
+      "port_node": "Network_Port",
+      "led_node": "Status_LED",
+      "body_node": "Body",
+      "size_m": {
+        "x": 0.256,
+        "y": 0.26,
+        "z": 0.118
+      },
+      "bounds_min": [
+        -0.128,
+        -0.13,
+        0.0
+      ],
+      "bounds_max": [
+        0.128,
+        0.13,
+        0.118
+      ],
+      "triangles": 254,
+      "mesh_nodes": 2,
+      "materials": [
+        "MAT_AP_Dark",
+        "MAT_AP_Industrial",
+        "MAT_AP_Plate",
+        "MAT_AP_StatusLED"
+      ],
+      "network_port_local_pos": [
+        0.0,
+        -0.1135,
+        0.068
+      ]
+    }
+  ]
+}

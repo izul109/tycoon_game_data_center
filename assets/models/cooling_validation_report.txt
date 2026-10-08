@@ -1,0 +1,7 @@
+Asset                   tris verts surf anchors  size (mm)                 result
+Cooling_Floor           114   228    2       5  800 x 1901 x 959   PASS
+Cooling_Compact          82   164    2       5  500 x 901 x 637   PASS
+Cooling_Wall             64   128    2       4  900 x 302 x 251   PASS
+Cooling_ControlPanel     60   120    2       5  200 x 140 x 31   PASS
+Cooling_Ceiling         114   228    2       3  960 x 361 x 960   PASS
+RESULT: ALL CHECKS PASSED

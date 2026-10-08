@@ -1,0 +1,31 @@
+Asset                     tris verts mats  bounds(x y z) [m]                          result
+Floor_1x1                   20    40    2  x[-0.500,+0.500] y[0.000,0.050] z[-0.500,+0.500]  PASS
+Floor_AccessPanel_1x1       72   144    4  x[-0.500,+0.500] y[0.000,0.056] z[-0.500,+0.500]  PASS
+Wall_Straight_1m             8    16    2  x[-0.500,+0.500] y[0.000,3.200] z[-0.050,+0.050]  PASS
+Wall_Straight_Short          8    16    2  x[-0.250,+0.250] y[0.000,3.200] z[-0.050,+0.050]  PASS
+Wall_End                    14    28    3  x[-0.250,+0.250] y[0.000,3.200] z[-0.050,+0.050]  PASS
+Wall_Corner_Inner           24    48    2  x[-0.050,+0.500] y[0.000,3.200] z[-0.050,+0.500]  PASS
+Wall_Corner_Outer           20    40    3  x[-0.050,+0.500] y[0.000,3.200] z[-0.050,+0.500]  PASS
+Door_Frame                  22    44    2  x[-0.500,+0.500] y[0.000,3.200] z[-0.050,+0.050]  PASS
+Door_Single                 60   120    2  x[+0.010,+0.890] y[0.060,2.120] z[-0.045,+0.045]  PASS
+Door_Double                120   240    2  x[-0.945,+0.945] y[0.060,2.120] z[-0.045,+0.045]  PASS
+Window_Frame                36    72    3  x[-0.500,+0.500] y[0.000,3.200] z[-0.050,+0.050]  PASS
+Window                       2     4    1  x[-0.460,+0.460] y[0.940,2.060] z[+0.000,+0.000]  PASS
+Ceiling_1x1                 18    36    2  x[-0.500,+0.500] y[0.000,0.040] z[-0.500,+0.500]  PASS
+Ceiling_Edge                18    36    2  x[-0.500,+0.500] y[0.000,0.040] z[-0.450,+0.500]  PASS
+Structural_Floor            28    56    1  x[-0.500,+0.500] y[0.000,0.300] z[-0.500,+0.500]  PASS
+Structural_Column           28    56    2  x[-0.200,+0.200] y[0.050,3.200] z[-0.200,+0.200]  PASS
+Wall_Opening                22    44    2  x[-1.000,+1.000] y[0.000,3.200] z[-0.050,+0.050]  PASS
+
+Total triangles, one of each piece: 520
+
+Seam test (cross-section at run ends must be y[0,3.2] z[-0.05,0.05] for every wall-run piece):
+  Wall_Straight_1m       end x=+-0.5: y[0.00,3.20] z[-0.05,+0.05] PASS
+  Wall_Straight_Short    end x=+-0.25: y[0.00,3.20] z[-0.05,+0.05] PASS
+  Door_Frame             end x=+-0.5: y[0.00,3.20] z[-0.05,+0.05] PASS
+  Window_Frame           end x=+-0.5: y[0.00,3.20] z[-0.05,+0.05] PASS
+  Wall_Opening           end x=+-1.0: y[0.00,3.20] z[-0.05,+0.05] PASS
+
+Run arithmetic: corner arm 0.5 + n x Wall_Straight_1m + corner arm 0.5 = (n+1) m -> grid-aligned for every n>=0. PASS
+
+RESULT: ALL CHECKS PASSED

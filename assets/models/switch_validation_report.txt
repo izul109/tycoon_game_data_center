@@ -1,0 +1,3 @@
+Switch_24P_1U: 654 tris, 1308 verts, 2 surfaces, 29 anchors, 31 LEDs, min anchor spacing 15.0 mm, size 482.6 x 44.1 x 401.5 mm  PASS
+Switch_48P_1U: 998 tris, 1996 verts, 2 surfaces, 53 anchors, 55 LEDs, min anchor spacing 15.0 mm, size 482.6 x 44.1 x 401.5 mm  PASS
+RESULT: ALL CHECKS PASSED

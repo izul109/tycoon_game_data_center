@@ -1,0 +1,292 @@
+{
+ "units": "meters",
+ "front": "+Z",
+ "assets": {
+  "fac_light_ceiling": {
+   "file": "fac_light_ceiling.glb",
+   "mount": "ceiling: origin on ceiling plane, hangs toward -Y",
+   "tris": 42,
+   "surfaces": [
+    "MAT_Facility_White",
+    "MAT_Emissive_White"
+   ],
+   "size_m": [
+    0.62,
+    0.035,
+    0.62
+   ],
+   "bounds_min": [
+    -0.31,
+    -0.035,
+    -0.31
+   ],
+   "anchors": [
+    "LIGHT"
+   ],
+   "leds": []
+  },
+  "fac_light_emergency": {
+   "file": "fac_light_emergency.glb",
+   "mount": "wall: origin = back-plate center on wall, protrudes +Z",
+   "tris": 90,
+   "surfaces": [
+    "MAT_Facility_White",
+    "MAT_Facility_Grey",
+    "MAT_Emissive_White"
+   ],
+   "size_m": [
+    0.3,
+    0.11,
+    0.1
+   ],
+   "bounds_min": [
+    -0.15,
+    -0.055,
+    0.0
+   ],
+   "anchors": [
+    "LIGHT_L",
+    "LIGHT_R"
+   ],
+   "leds": [
+    "LED_STATUS"
+   ]
+  },
+  "fac_light_wall": {
+   "file": "fac_light_wall.glb",
+   "mount": "wall: origin = back-plate center on wall, protrudes +Z",
+   "tris": 30,
+   "surfaces": [
+    "MAT_Facility_Grey",
+    "MAT_Facility_Dark",
+    "MAT_Emissive_White"
+   ],
+   "size_m": [
+    0.38,
+    0.104,
+    0.085
+   ],
+   "bounds_min": [
+    -0.19,
+    -0.05,
+    0.0
+   ],
+   "anchors": [
+    "LIGHT"
+   ],
+   "leds": []
+  },
+  "fac_camera": {
+   "file": "fac_camera.glb",
+   "mount": "wall: origin = back-plate center on wall, protrudes +Z; camera looks along +Z",
+   "tris": 98,
+   "surfaces": [
+    "MAT_Facility_Grey",
+    "MAT_Facility_White",
+    "MAT_Lens"
+   ],
+   "size_m": [
+    0.075,
+    0.129,
+    0.23
+   ],
+   "bounds_min": [
+    -0.0375,
+    -0.084,
+    0.0
+   ],
+   "anchors": [
+    "CAM_VIEW"
+   ],
+   "leds": [
+    "LED_REC"
+   ]
+  },
+  "fac_extinguisher": {
+   "file": "fac_extinguisher.glb",
+   "mount": "floor: origin = bottom-center; front (label) faces +Z",
+   "tris": 156,
+   "surfaces": [
+    "MAT_Facility_Dark",
+    "MAT_Safety_Red",
+    "MAT_Sign_White"
+   ],
+   "size_m": [
+    0.131,
+    0.421,
+    0.1067
+   ],
+   "bounds_min": [
+    -0.075,
+    0.0,
+    -0.0533
+   ],
+   "anchors": [],
+   "leds": []
+  },
+  "fac_extinguisher_mount": {
+   "file": "fac_extinguisher_mount.glb",
+   "mount": "wall: origin = back-plate center on wall, protrudes +Z",
+   "tris": 62,
+   "surfaces": [
+    "MAT_Facility_Grey",
+    "MAT_Metal"
+   ],
+   "size_m": [
+    0.121,
+    0.34,
+    0.1285
+   ],
+   "bounds_min": [
+    -0.0605,
+    -0.17,
+    0.0
+   ],
+   "anchors": [
+    "EXT_SEAT"
+   ],
+   "leds": []
+  },
+  "fac_sign_safety": {
+   "file": "fac_sign_safety.glb",
+   "mount": "wall: origin = back-plate center on wall, protrudes +Z",
+   "tris": 22,
+   "surfaces": [
+    "MAT_Safety_Green",
+    "MAT_Sign_White"
+   ],
+   "size_m": [
+    0.3,
+    0.3,
+    0.0046
+   ],
+   "bounds_min": [
+    -0.15,
+    -0.15,
+    0.0
+   ],
+   "anchors": [],
+   "leds": []
+  },
+  "fac_sign_warning": {
+   "file": "fac_sign_warning.glb",
+   "mount": "wall: origin = triangle centroid on wall, protrudes +Z",
+   "tris": 12,
+   "surfaces": [
+    "MAT_Sign_Black",
+    "MAT_Warning_Yellow"
+   ],
+   "size_m": [
+    0.3,
+    0.2598,
+    0.0065
+   ],
+   "bounds_min": [
+    -0.15,
+    -0.0866,
+    0.0
+   ],
+   "anchors": [],
+   "leds": []
+  },
+  "fac_sign_room": {
+   "file": "fac_sign_room.glb",
+   "mount": "wall: origin = back-plate center on wall, protrudes +Z",
+   "tris": 14,
+   "surfaces": [
+    "MAT_Facility_Dark",
+    "MAT_Sign_White",
+    "MAT_Info_Blue"
+   ],
+   "size_m": [
+    0.32,
+    0.12,
+    0.0046
+   ],
+   "bounds_min": [
+    -0.16,
+    -0.06,
+    0.0
+   ],
+   "anchors": [
+    "TEXT"
+   ],
+   "leds": []
+  },
+  "fac_sign_directional": {
+   "file": "fac_sign_directional.glb",
+   "mount": "wall: origin = back-plate center on wall; arrow points +X (mirror with scale.x=-1, rotate Z for up/down)",
+   "tris": 13,
+   "surfaces": [
+    "MAT_Info_Blue",
+    "MAT_Sign_White"
+   ],
+   "size_m": [
+    0.32,
+    0.12,
+    0.0046
+   ],
+   "bounds_min": [
+    -0.16,
+    -0.06,
+    0.0
+   ],
+   "anchors": [],
+   "leds": []
+  },
+  "fac_panel_control": {
+   "file": "fac_panel_control.glb",
+   "mount": "wall: origin = back-plate center on wall, protrudes +Z",
+   "tris": 44,
+   "surfaces": [
+    "MAT_Facility_White",
+    "MAT_Facility_Dark",
+    "MAT_Emissive_Screen",
+    "MAT_Safety_Red"
+   ],
+   "size_m": [
+    0.18,
+    0.24,
+    0.046
+   ],
+   "bounds_min": [
+    -0.09,
+    -0.12,
+    0.0
+   ],
+   "anchors": [
+    "SCREEN",
+    "BTN_01",
+    "BTN_02",
+    "BTN_03"
+   ],
+   "leds": [
+    "LED_STATUS"
+   ]
+  },
+  "fac_estop_enclosure": {
+   "file": "fac_estop_enclosure.glb",
+   "mount": "wall: origin = back-plate center on wall, protrudes +Z",
+   "tris": 70,
+   "surfaces": [
+    "MAT_Warning_Yellow",
+    "MAT_Facility_Dark",
+    "MAT_Safety_Red"
+   ],
+   "size_m": [
+    0.1,
+    0.12,
+    0.086
+   ],
+   "bounds_min": [
+    -0.05,
+    -0.06,
+    0.0
+   ],
+   "anchors": [
+    "PRESS"
+   ],
+   "leds": []
+  }
+ }
+}
